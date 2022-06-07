@@ -1,0 +1,41 @@
+h1 {
+    color: blue;
+}
+
+.selectorOnClass {
+    color: rgb(13, 94, 12);
+}
+
+#nameId {
+    background-color: yellow;
+}
+
+[required] {
+    border-color: red;
+}
+
+.button.border {
+    color: red;
+    background-color: yellow;
+    border-color: red;
+}
+
+input[name="someId"] {
+    border-color: aqua;
+}
+
+.imgClass[alt="somePicture"] {
+    color: rgb(255, 80, 240);
+}
+
+img.imgClass[alt="picture"] {
+    color: blue;
+}
+
+p.tegClass {
+    color: rgb(64, 0, 255);
+}
+
+#idClass.idClass {
+    background: blue;
+}

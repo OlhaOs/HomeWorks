@@ -5,52 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomeWork5</title>
+    <title>HomeWork6</title>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
-    <h1>Реєстрація користувача</h1>
-    <form action="https://fom.in.ua/echo" method="post">
-        <p>
-            <label>
-                <span> Введіть ім'я</span>
-                <input type="text" name="First Name" placeholder="Enter name" required>
-            </label>
-        </p>
-        <p>
-            <label>
-                <span>Введіть прізвище</span>
-                <input type="text" name="Last Name" placeholder="Enter surName" required>
-            </label>
-        </p>
-        <p>
-            <label>
-                <span> Введіть email</span>
-                <input type="email" name="Email" placeholder="Enter email" required>
-            </label>
-        </p>
-        <p>
-            <label>
-                <span> Введіть номер телефону</span>
-                <input type="tel" name="Phone Number" placeholder="+38(XXX)-XXX-XX-XX">
-            </label>
-        </p>
-        <p>
-            <label>
-                <span> Введіть пароль</span>
-                <input type="password" name="Password" placeholder="Enter password" required>
-            </label>
-        </p>
-        <p>
-            <label>
-                <span> Підтвердіть пароль</span>
-                <input type="password" placeholder="Confirm password" required>
-            </label>
-        </p>
-        <p>
-            <input type="submit" value="Submit">
-        </p>
-    </form>
+
+    <p> Базові селектори:<br>
+        Селектор за тегом - селектор елемента призначений для вибору елементів за ім'ям тега. <br>
+        Селектор за класом - призначений для вибору елементів за класом (значенням атрибута class).<br>
+        Селектор за ідентифікатором - призначений для вибору елемента за ідентифікатором (значенням атрибута id).<br>
+        Селектор за атрибутом - призначений для вибора елементів за ім'ям атрибута та/або його значенням.<br>
+        Універсальний селектор (*) - призначений для вибору усіх елементів.
+    </p>
+
+    <h1> Селектор за тегом </h1>
+    <h2 class="selectorOnClass"> Селектор за класом </h2>
+
+    <p>Селектор за ідентифікатором
+        <input type="text" id="nameId">
+    </p>
+
+    <p>Селектор за атрибутом
+        <input type="text" required>
+    </p>
+
+    <p>Селектор за декількома класами
+        <input class="button border" type="button" value="Submit">
+    </p>
+
+    <p>Селектор за тегом та атрибутом
+        <input type="text" name="someId">
+    </p>
+    <p class="tegClass"> Селектор за тегом та класом </p>
+
+    <p>Селектор за класом та атрибутом
+        <img class="imgClass" src="#" alt="somePicture" />
+    </p>
+
+    <p>Селектор за ідентифікатором та класом
+        <input class="idClass" type="text" id="idClass">
+    </p>
+
+    <p>Селектор за тегом, класом та атрибутом
+        <img class="imgClass" src="#" alt="picture" />
+    </p>
+
+
 </body>
 
 </html>
