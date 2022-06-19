@@ -6,19 +6,106 @@
     box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 html {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 32px;
     font-weight: 400;
     line-height: 1.7;
     font-style: normal;
+  
 }
+
+nav {
+    list-style: none;
+    background-color: hwb(82 18% 58%);
+    width: 100%;
+    color: beige;
+   }
+
+li {
+    list-style: none;  
+    border: 1px solid;
+    border-color: hwb(82 18% 58%); 
+   }
+
+a   {
+    text-decoration: none;
+    color: beige;
+}
+
+.menu{
+    display: inline-block;
+    padding: 30px;
+   
+}
+.menu > a {
+    text-transform: uppercase;
+}
+
+.submenu {
+    position: relative;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: rgb(55, 98, 52);
+    z-index: 1;
+    top: 100%;
+    left: 0; 
+}
+
+.menu:hover {
+    background-color: rgb(55, 98, 52);
+}
+
+.submenu:hover {
+    background-color:rgb(55, 98, 52);
+}
+
+.dropdown a {
+    padding-top: 20px;
+    min-width: 300px;  
+    display: inline-block;
+}
+
+.dropdown li{
+    padding-bottom: 30px;
+    padding-left: 30px;   
+}
+
+.submenu:hover .dropdown {
+     display: block;
+}
+
+.dropdown > li > a:after {
+    content:"+";
+    float:right;
+    padding-right: 20px;
+ }
+
+.subProduct {
+    position: relative;
+}
+
+.dropright {
+    position: absolute;
+    display: none;
+    position: absolute;
+    background-color: rgb(55, 98, 52);
+    z-index: 1;  
+    top: 0px;
+    left:100%;
+        
+}
+
+.dropright a {
+    display: inline-block;
+    min-width: 300px;
+ }
+
+ .subProduct:hover .dropright {
+    display: block;
+ }
+ 
+ 
