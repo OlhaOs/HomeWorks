@@ -50,7 +50,6 @@ h3 {
 li {
     list-style: none;
 }
-/* ========================================= */
 
 .header {
     padding-top: 2rem;
@@ -58,8 +57,6 @@ li {
     border-bottom: 1px ;
     box-shadow: 0px 1px 8px rgba(83, 109, 122, 0.29);
 }
-
-/*========================================== */
 
 .firstScreen {
     margin-top: 60px;
@@ -105,7 +102,6 @@ p.textFirstScreen > span {
     font-size: 15px;
     line-height: 22px;
 }
-/*=================================================*/
 
 .textBlog {
     padding-top: 13px;
@@ -123,7 +119,6 @@ p.textFirstScreen > span {
 }
 
 .card {
-    /* align-items: center; */
     gap:15px;
     font-size: 18px;
     line-height: 25px
@@ -133,7 +128,6 @@ p.textFirstScreen > span {
     padding-top: 20px;
 }
 
-/*=================================================*/
 .playButtonBlog {
     font-size: 16px;
     line-height: 20px;
@@ -160,7 +154,6 @@ p.textFirstScreen > span {
     font-size: 28px;
     line-height: 32px;
 }
-/*=================================================*/
 .reviewCard {
     position: relative;
     background-color:#F7F9FA;
@@ -194,9 +187,6 @@ p.textFirstScreen > span {
     line-height: 20px;
 
 }
-
-
-/*=================================================*/
 
 .playButtonReview{ 
     font-size: 16px;
@@ -274,8 +264,6 @@ p.textFirstScreen > span {
     color: #536D7A
 }
 
-/*=================================================*/
-
 footer {
     background-color:#F7F9FA ;
     padding-top: 59px;
@@ -309,10 +297,10 @@ p.text > span {
 .h3 {
     padding-bottom: 12px;
     color:#333333;
-
 }
-footer img {
 
+
+footer img {
     max-width: 139px; 
     border-radius: 7px;
 }
@@ -333,9 +321,8 @@ footer img {
     line-height: 20px;
 }
 
-
 .footerForm {
-    width:  274px;
+    width: 274px;
     height: 48px;
     border-radius: 5px 0 0 5px;
     border: 1px solid #AABCC5;
@@ -353,6 +340,7 @@ footer img {
     background-color: #768F9C;
     border-color: #AABCC5;
     border-left: none;
+    border-right: none;
 }
 
 .footerList {
