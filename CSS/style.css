@@ -38,7 +38,6 @@ h2 {
     font-size: 38px;
     line-height: 40px;  
     color: var(--text-color);
-    padding-top: 70px;
     padding-bottom: 33px;
 }
 
@@ -51,26 +50,29 @@ li {
     list-style: none;
 }
 
-.header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px ;
-    box-shadow: 0px 1px 8px rgba(83, 109, 122, 0.29);
+header .header {
+    padding-top:31px;
+    padding-bottom: 34px;
+    background-color: var(--background-color);
 }
-
+.header {
+      box-shadow: 0px 1px 8px rgba(83, 109, 122, 0.29);
+}
+.first{
+    margin-top: 8px;
+    padding-top: 58px;
+    background-color:var(--background-color);
+}
 .firstScreen {
-    margin-top: 60px;
     background-color: #E3EBF1;
     border-radius: 10px ;
-    padding: 50px;
-  
+    padding:50px ;
 }
 .rightPart p  {
     color: #10843F;
     font-size: 18px;
     line-height: 25px;
 }
-
 p.textFirstScreen{
     margin-right: 33px;
     margin-bottom: 25px;
@@ -103,6 +105,11 @@ p.textFirstScreen > span {
     line-height: 22px;
 }
 
+.second {
+    padding-top: 70px;
+    background-color:var(--background-color);
+}
+
 .textBlog {
     padding-top: 13px;
     font-size: 15px;
@@ -127,23 +134,21 @@ p.textFirstScreen > span {
 .card+.card {
     padding-top: 20px;
 }
+.third{
+    padding-top: 74px;
+    background-color:var(--background-color);
+}
 
-.playButtonBlog {
+.playButton {
     font-size: 16px;
     line-height: 20px;
-    padding-top: 74px;
     padding-bottom: 100px;
     gap:4px;
 }
-
-
 .seeTheList {
     background: url("../images/backgroungImage.png") no-repeat center/cover;
     border-radius: 10px;
     padding-right: 40px;
-}
-.reviewTitle{
-    padding-top: 97px;
 }
 
 .tool {
@@ -153,6 +158,10 @@ p.textFirstScreen > span {
     gap:12px;
     font-size: 28px;
     line-height: 32px;
+}
+.fourth {
+    padding-top: 97px;
+    background-color:var(--background-color);
 }
 .reviewCard {
     position: relative;
@@ -188,35 +197,25 @@ p.textFirstScreen > span {
 
 }
 
-.playButtonReview{ 
-    font-size: 16px;
-    line-height: 20px;
-    padding-top: 40px;
+.fifth{
+    padding-top: 40px; 
     padding-bottom: 100px;
-    gap:4px;
-
+    background-color:var(--background-color);
 }
-
 .newsLetter {
     background: url("../images/backgroungImage.png") no-repeat center/cover;
     border-radius: 10px;
     padding:50px;
-    margin-bottom: 100px;
-   
 }
 
 .letterWhite {
-    position: relative;
     background-color: #ffffff;
     width: 60px;
     height: 60px;
-    border-radius:  500px;
+    border-radius:  50%;
+    align-items: center;
 }
-.letterWhite > img {
-    position: absolute;
-    top:10px;
-    left:10px;
-}
+
 .imageLetter {
     margin-top: 20px;
     gap:10px;
@@ -267,7 +266,6 @@ p.textFirstScreen > span {
 footer {
     background-color:#F7F9FA ;
     padding-top: 59px;
-    padding-bottom: 12px;
     color: var(--text-color);
 }
 
@@ -366,6 +364,5 @@ li+li {
     border-top: 1px solid #536D7A; 
     font-size: 12px;
     line-height: 20px;
-
 }
 

@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
-<body>
+<body class="flex flex-col">
     <header>
         <div class="header">
-            <nav>
-                <div class="container flex item-center justify-between">
-                    <div class=" flex item-center gap-40">
+            <div class="container">
+                <nav class="border flex item-center justify-between">
+                    <div class="flex item-center gap-40">
                         <a href="#">
                             <img src="./images/logo.png" alt="logo"></a>
                         <a href="#" class="flex item-center">Pages</a>
@@ -34,26 +34,28 @@
                     </div>
                     <a href="#" class="flex item-center gap-7">
                         <img src="./images/letterYellow.png" alt="letterYellow">Sign Up</a>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
-    <section>
-        <div class="container firstScreen flex justify-between gap-40">
-            <img src="./images/firstScreenImage.png" alt="firstScreenImage">
-            <div class="rightPart flex-col">
-                <p>Introducing Affiliate Template for Webflow</p>
-                <h1>Easy-to-use Template for building Affiliate Sites </h1>
 
-                <p class="textFirstScreen"><span>Affiliate</span> is a Webflow template made for entrepreneurs who
-                    want a professional and polished site ready to start and grow their affiliate marketing business in
-                    any niche.</p>
-                <button class="btn btnGreen">Buy this Template
-                </button>
+    <section class="first">
+        <div class="container">
+            <div class="firstScreen flex justify-between gap-40">
+                <img src="./images/firstScreenImage.png" alt="firstScreenImage">
+                <div class="rightPart flex-col">
+                    <p>Introducing Affiliate Template for Webflow</p>
+                    <h1>Easy-to-use Template for building Affiliate Sites </h1>
+                    <p class="textFirstScreen"><span>Affiliate</span> is a Webflow template made for entrepreneurs who
+                        want a professional and polished site ready to start and grow their affiliate marketing business
+                        in any niche.</p>
+                    <button class="btn btnGreen" type="button">Buy this Template
+                    </button>
+                </div>
             </div>
         </div>
     </section>
-    <section>
+    <section class="second">
         <div class="container">
             <h2>
                 Latest from the Blog
@@ -84,9 +86,9 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="third">
         <div class="container">
-            <div class="playButtonBlog flex item-center">
+            <div class="playButton flex item-center">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <path d="M0 0H20V20H0V0Z" fill="url(#pattern0)" />
@@ -111,9 +113,9 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="fourth">
         <div class="container">
-            <h2 class="reviewTitle">Latest Product Reviews</h2>
+            <h2>Latest Product Reviews</h2>
             <div class="flex gap-40">
                 <div class="reviewCard flex-col">
                     <img src="./images/review1.jpg" alt="review1">
@@ -151,9 +153,9 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="fifth">
         <div class="container">
-            <div class="playButtonReview flex item-center">
+            <div class="playButton flex item-center">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <path d="M0 0H20V20H0V0Z" fill="url(#pattern0)" />
@@ -172,7 +174,7 @@
                 <img src="./images/newsLetterImage.png" alt="newsLetter">
                 <div class="flex-col">
                     <div class="imageLetter flex item-center">
-                        <div class="letterWhite">
+                        <div class="letterWhite flex justify-center">
                             <img src="./images/letterWhite.png" alt="letter">
                         </div>
                         <h3>
@@ -192,69 +194,71 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="flex  justify-between gap-40">
-                <div class="footerLeft flex flex-col">
-                    <img class="logo" src="./images/logo.png" alt="logo">
-                    <div class="socialNet flex">
-                        <a href="#"><img src="./svg/FB.svg" alt="FB"></a>
-                        <a href="#"><img src="./svg/twitter.svg" alt="twitter"></a>
-                        <a href="#"><img src="./svg/insta.svg" alt="instagram"></a>
+    <section>
+        <footer>
+            <div class="container">
+                <div class="flex justify-between gap-40">
+                    <div class="footerLeft flex flex-col">
+                        <img class="logo" src="./images/logo.png" alt="logo">
+                        <div class="socialNet flex">
+                            <a href="#"><img src="./svg/FB.svg" alt="FB"></a>
+                            <a href="#"><img src="./svg/twitter.svg" alt="twitter"></a>
+                            <a href="#"><img src="./svg/insta.svg" alt="instagram"></a>
+                        </div>
+                        <p class="text"> <span>Affiliate</span> is a Webflow template made for entrepreneurs who want a
+                            professional
+                            and polished site
+                            ready to start and grow their affiliate marketing business in any niche.</p>
                     </div>
-                    <p class="text"> <span>Affiliate</span> is a Webflow template made for entrepreneurs who want a
-                        professional
-                        and polished site
-                        ready to start and grow their affiliate marketing business in any niche.</p>
-                </div>
-                <div class="footerMiddle flex-col ">
-                    <h3 class="h3">
-                        Latest Articles
-                    </h3>
-                    <div class="footerCard flex">
-                        <img src="./images/blogBigImage.jpg" alt="blog">
-                        <p>How to Prep Your Lawn in the Spring</p>
+                    <div class="footerMiddle flex-col ">
+                        <h3 class="h3">
+                            Latest Articles
+                        </h3>
+                        <div class="footerCard flex">
+                            <img src="./images/blogBigImage.jpg" alt="blog">
+                            <p>How to Prep Your Lawn in the Spring</p>
+                        </div>
+                        <div class="footerCard flex">
+                            <img src="./images/blogImage1.jpg" alt="blog1">
+                            <p>Secrets to Know About Hedge Trimming</p>
+                        </div>
+                        <div class="footerCard flex">
+                            <img src="./images/blogImage2.jpg" alt="blog2">
+                            <p>What to Do With a Dying Tree</p>
+                        </div>
                     </div>
-                    <div class="footerCard flex">
-                        <img src="./images/blogImage1.jpg" alt="blog1">
-                        <p>Secrets to Know About Hedge Trimming</p>
-                    </div>
-                    <div class="footerCard flex">
-                        <img src="./images/blogImage2.jpg" alt="blog2">
-                        <p>What to Do With a Dying Tree</p>
-                    </div>
-                </div>
-                <div class="footerRigth flex-col">
-                    <h3 class="h3">Browse </h3>
-                    <form class="flex">
-                        <input class="footerForm" type="text">
-                        <button class="btnGrey" type="submit">Search</button>
+                    <div class="footerRigth flex-col">
+                        <h3 class="h3">Browse </h3>
+                        <form class="flex">
+                            <input class="footerForm" type="text">
+                            <button class="btnGrey" type="submit">Search</button>
 
-                    </form>
-                    <ul class="footerList">
-                        <li>About</li>
-                        <li>Categories</li>
-                        <li>Tools</li>
-                        <li>Contact</li>
-                        <li>Privacy Policy</li>
-                        <li>Affiliate Disclosure</li>
-                    </ul>
-                    <p class="textBrand">©2022 Your Brand Name</p>
+                        </form>
+                        <ul class="footerList">
+                            <li>About</li>
+                            <li>Categories</li>
+                            <li>Tools</li>
+                            <li>Contact</li>
+                            <li>Privacy Policy</li>
+                            <li>Affiliate Disclosure</li>
+                        </ul>
+                        <p class="textBrand">©2022 Your Brand Name</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container footerLink">
-            <div class="flex justify-between gap-7">
-                <a href="#">Style Guide</a>
-                <a href="#">Licenses</a>
-                <a class="flex-1" href="#">Changelog</a>
-                <a href="#">Powered by</a>
-                <a href="#">Webflow</a>
-                <a href="#">Designed by</a>
-                <a href="#">Kevin Barrett</a>
+            <div class="container">
+                <div class="footerLink flex justify-between gap-7">
+                    <a href="#">Style Guide</a>
+                    <a href="#">Licenses</a>
+                    <a class="flex-1" href="#">Changelog</a>
+                    <a href="#">Powered by</a>
+                    <a href="#">Webflow</a>
+                    <a href="#">Designed by</a>
+                    <a href="#">Kevin Barrett</a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </section>
 </body>
 
 </html>
