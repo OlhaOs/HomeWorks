@@ -1,0 +1,32 @@
+@import url("../fonts/font.css");
+:root {
+  --fill-color: #f0145a;
+  --text-color-blue: #24a3ff;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+}
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-family: "Montserrat", serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  font-style: normal;
+}
