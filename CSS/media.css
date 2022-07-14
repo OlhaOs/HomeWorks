@@ -86,19 +86,6 @@
   .burger {
     display: none;
   }
-  .wrapper {
-    justify-content: space-between;
-    margin-top: 60px;
-    gap: 60px;
-  }
-  .card img {
-    max-width: 294px;
-    height: 400px;
-    object-fit: cover;
-  }
-  p.name > span {
-    display: none;
-  }
 
   .footerAdress,
   .footerContact {
@@ -107,8 +94,6 @@
     align-items: center;
     padding-left: 125px;
   }
-
-  /*for contact_page*/
   .contactAdress {
     margin-top: 60px;
   }
@@ -127,13 +112,9 @@
   .container {
     max-width: calc(904px + 2rem);
   }
-  h1.team {
-    margin: 0 120px;
-  }
   .card img {
     max-width: 261.33px;
   }
-
   .headerGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -177,7 +158,7 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  /* for contact page*/
+
   .contact {
     display: flex;
     justify-content: space-between;
@@ -197,9 +178,6 @@
   .container {
     max-width: calc(1320px + 2rem);
   }
-  .card img {
-    max-width: 400px;
-  }
   .contact {
     justify-content: center;
     margin-right: 180px;
@@ -213,9 +191,5 @@
   }
   .container {
     max-width: calc(1600px + 2rem);
-  }
-  .card img {
-    max-width: 493.33px;
-    width: 493.33px;
   }
 }

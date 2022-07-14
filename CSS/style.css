@@ -235,49 +235,6 @@ h1 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  margin-bottom: 60px;
-}
-
-.card img {
-  border-radius: 12px;
-}
-.card > div {
-  margin-top: 15px;
-}
-.name {
-  line-height: 20px;
-  color: #323264;
-}
-
-.position {
-  color: #b3b3ba;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-}
-.pointer {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: #f5f5fa;
-}
-.active {
-  display: none;
-}
-.card:hover .active {
-  display: block;
-}
-.card:hover svg {
-  display: none;
-}
-
-.card:hover .name {
-  color: var(--fill-color);
-}
 
 footer {
   background-color: #f5f5fa;
@@ -319,7 +276,6 @@ footer {
   font-weight: 400;
   color: #b3b3ba;
 }
-/* css for contact_page*/
 
 .contactAdress,
 .contactPhone {
@@ -343,6 +299,7 @@ footer {
 .contactFB:hover {
   color: var(--fill-color);
 }
+
 .contactForm-background {
   background-color: var(--background-color-lightGrey);
   border-radius: 12px;
