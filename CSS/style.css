@@ -20,6 +20,9 @@
 .flex {
   display: flex;
 }
+.flex-1 {
+  flex: 1;
+}
 .flex-col {
   flex-direction: column;
 }
@@ -61,6 +64,10 @@
   z-index: 1;
   gap: 10px;
 }
+.check:hover + .language {
+  background-color: #f5f5fa;
+  border-radius: 8px;
+}
 .form {
   position: relative;
 }
@@ -82,7 +89,8 @@
 .phoneNumber {
   font-size: 16px;
 }
-.dot {
+.dot,
+.fb {
   display: none;
 }
 
@@ -108,8 +116,9 @@
 .burger {
   width: 32px;
   height: 32px;
-  position: absolute;
   cursor: pointer;
+  position: absolute;
+  top: 65px;
   right: 15px;
 }
 .burger span {
@@ -123,12 +132,13 @@
 }
 .checkbox {
   position: absolute;
+  top: 65px;
+  right: 15px;
   width: 32px;
   height: 32px;
   z-index: 1;
   opacity: 0;
   cursor: pointer;
-  right: 15px;
 }
 .burger span:first-child {
   top: 8px;
@@ -158,70 +168,55 @@
   background-color: var(--fill-color);
 }
 .checkbox:checked + .burger {
-  position: absolute;
-  top: 430px;
-  right: 27px;
-  z-index: 1;
+  position: fixed;
+  z-index: 13;
 }
 .checkbox:checked {
-  position: absolute;
-  top: 430px;
-  right: 27px;
-  z-index: 2;
+  position: fixed;
+  z-index: 99;
 }
 .checkbox:checked ~ .menu-dropDown {
   display: flex;
 }
-
 .menu-dropDown {
-  height: 667px;
-  background-color: #323264;
-  opacity: 0.7;
-  position: relative;
-  display: flex;
+  background-color: rgba(50, 50, 100, 0.7);
+  position: fixed;
+  inset: 0;
   flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
   display: none;
+  z-index: 10;
 }
-.navigationDropDown {
+.navigation {
   position: relative;
   background-color: #ffffff;
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
+  padding: 64px 12px 12px;
+  z-index: 11;
+  gap: 15px;
+  color: var(--text-color-blue);
+  align-items: center;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.navigation li {
+  width: 100%;
   margin-right: 8px;
   margin-left: 8px;
-  margin-top: 316px;
-  padding: 64px 12px 12px;
-  gap: 15px;
-}
-.navigationDropDown > a:hover {
-  background-color: #e6e6f0;
-}
-.navigationDropDown > a {
   background-color: #f5f5fa;
   text-align: center;
-  width: 100%;
+  border-radius: 12px;
   padding-top: 7px;
   padding-bottom: 7px;
-  border-radius: 12px;
   font-size: 24px;
   line-height: 29px;
-  color: #24a3ff;
-}
-
-.navigation {
-  display: none;
-  color: var(--text-color-blue);
-  margin-top: 30px;
-  padding-left: 15px;
-  gap: 15px;
-}
-.navigation > a {
   color: var(--text-color-blue);
 }
-
-.navigation a:hover,
-.navigationDropDown > a:hover {
+.navigation li :hover {
+  background-color: #e6e6f0;
   color: var(--fill-color);
   text-decoration: underline;
 }
@@ -229,7 +224,6 @@
 .headerSecond {
   padding: 15px;
   display: flex;
-  flex-direction: column;
 }
 
 h1 {
@@ -281,7 +275,7 @@ h1 {
   display: none;
 }
 
-.card > div:hover .name {
+.card:hover .name {
   color: var(--fill-color);
 }
 
@@ -306,7 +300,8 @@ footer {
   text-transform: uppercase;
   color: var(--text-color-blue);
 }
-.svgFB > svg > path:hover {
+.svgFB > svg > path:hover,
+.fb > path:hover {
   fill: var(--fill-color);
 }
 .phone {
@@ -315,11 +310,107 @@ footer {
 .email {
   color: var(--text-color-blue);
 }
-.email:hover {
+.email:hover,
+.onMap:hover {
   color: var(--fill-color);
 }
 
 .copyRight {
   font-weight: 400;
   color: #b3b3ba;
+}
+/* css for contact_page*/
+
+.contactAdress,
+.contactPhone {
+  border-bottom: 2px solid #e6e6f0;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+}
+.contactPhone p {
+  margin-top: 15px;
+}
+.contactFB {
+  color: var(--text-color-blue);
+  margin-top: 35px;
+  font-size: 12px;
+  line-height: 16px;
+  align-items: center;
+}
+.contactFB:hover {
+  color: var(--fill-color);
+}
+.contactForm-background {
+  background-color: var(--background-color-lightGrey);
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contactForm {
+  position: relative;
+  width: 100%;
+  padding: 0 30px 30px;
+}
+.heplForm {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(36, 163, 255, 0);
+  margin-bottom: 15px;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  outline: none;
+}
+.heplForm + .message {
+  padding-bottom: 90px;
+}
+.heplForm:hover {
+  border: 1px solid var(--text-color-blue);
+}
+.heplForm:focus {
+  border: 1px solid var(--text-color-blue);
+}
+.heplForm:invalid {
+  border: 1px solid #ff0000;
+}
+
+::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #b3b3ba;
+}
+.contactText {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b3b3ba;
+  margin: 15px 0;
+}
+.btnBlue {
+  width: 100%;
+  color: #ffffff;
+  background-color: var(--text-color-blue);
+  border: none;
+  border-radius: 12px;
+  padding: 18px 66px;
+  font-weight: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btnBlue:hover {
+  background-color: #0085ff;
+}
+.btnBlue:active {
+  background-color: #006ccf;
 }

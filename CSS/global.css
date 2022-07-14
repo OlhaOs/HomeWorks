@@ -2,6 +2,7 @@
 :root {
   --fill-color: #f0145a;
   --text-color-blue: #24a3ff;
+  --background-color-lightGrey: #f5f5fa;
 }
 
 *,
@@ -29,4 +30,7 @@ html {
   font-weight: 700;
   line-height: 20px;
   font-style: normal;
+}
+li {
+  list-style: none;
 }
