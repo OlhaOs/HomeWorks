@@ -91,17 +91,16 @@
                         <div class="contactFB">
                             <a class="flex gap10 center" href="https://www.facebook.com/" target="_blank"
                                 rel="nofollow noopener">
-                                <p class="svgFB"><svg width=" 38" height="38" viewBox="0 0 38 38" fill="none"
+                                <span class="svgFB"><svg width=" 38" height="38" viewBox="0 0 38 38" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
                                             fill="#24A3FF" />
                                     </svg>
-                                </p>
-                                <div class="flex-col">
-                                    <p>Our page </p>
-                                    <p>on facebook</p>
-                                </div>
+                                </span>
+                                <span>Our page <br> on facebook </span>
+
+
                             </a>
                         </div>
                     </div>
@@ -110,11 +109,19 @@
                         <div class="contactForm flex flex-col">
                             <h1>We would like to help you</h1>
                             <form>
-                                <input class="heplForm" type="text" placeholder="Name">
-                                <input class="heplForm message" type="text" placeholder="Message">
+                                <label for="name"></label>
+                                <input class="helpForm" name="name" id="name" type="text" placeholder="Name">
+                                <label for="message"></label>
+
+                                <textarea class="helpForm message" name="message" id="message"
+                                    placeholder="Message"></textarea>
+
                                 <p class="contactText">How to answer you?</p>
-                                <input class="heplForm" type="tel" placeholder="Phone number">
-                                <input class="heplForm" type="email" placeholder="Email">
+                                <label for="phoneNumber"></label>
+                                <input class="helpForm" name="phoneNumber" id="phoneNumber" type="tel"
+                                    placeholder="Phone number">
+                                <label for="email"></label>
+                                <input class="helpForm" name="email" id="email" type="email" placeholder="Email">
                                 <button class="btnBlue" type="submit">Send message</button>
                             </form>
                         </div>
