@@ -1,0 +1,90 @@
+@media (min-width: 768px) {
+  .containerWide {
+    max-width: calc(648px + 2rem);
+  }
+  .container {
+    max-width: calc(648px + 2rem);
+  }
+
+  h1 {
+    margin-top: 60px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .wrapper {
+    margin-top: 60px;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .card {
+    flex: 0 1 45%;
+  }
+  .listClients {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .imgClients {
+    flex: 0 1 33.33%;
+  }
+  .hideMobile {
+    display: flex;
+  }
+  .clickky {
+    background-color: #c71c36;
+  }
+  .eco-leasing {
+    background-color: #dcf3f9;
+  }
+  .ingratek {
+    background-color: #eaeaea;
+  }
+  .city-par {
+    background-color: #282240;
+  }
+  .artprint {
+    background-color: #1d4568;
+  }
+  .ultimatecard {
+    background-color: #000000;
+  }
+}
+@media (min-width: 1024px) {
+  .containerWide {
+    max-width: calc(904px + 2rem);
+  }
+  .container {
+    max-width: calc(904px + 2rem);
+  }
+
+  .card {
+    flex: 0 1 28%;
+  }
+  .imgClients {
+    flex: 0 1 25%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .containerWide {
+    max-width: calc(1320px + 2rem);
+  }
+  .container {
+    max-width: calc(1320px + 2rem);
+  }
+  .card {
+    flex: 0 1 30%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .containerWide {
+    max-width: calc(1600px + 2rem);
+  }
+  .container {
+    max-width: calc(1600px + 2rem);
+  }
+  .listPartners {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}

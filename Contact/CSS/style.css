@@ -1,0 +1,111 @@
+@import url("../../CSS/global.css");
+@import url("../../CSS/header-white.css");
+@import url("../../CSS/footer.css");
+
+h1.redGradient {
+  font-size: 30px;
+  line-height: 37px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contact {
+  margin-bottom: 30px;
+}
+.contactAdress,
+.contactPhone {
+  border-bottom: 2px solid #e6e6f0;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+}
+.contactPhone p {
+  margin-top: 15px;
+}
+.contactFB {
+  color: var(--text-color-blue);
+  margin-top: 35px;
+  font-size: 12px;
+  line-height: 16px;
+  align-items: center;
+}
+.contactFB:hover {
+  color: var(--fill-color);
+}
+
+.contactForm-background {
+  background-color: var(--background-color-lightGrey);
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contactForm {
+  position: relative;
+  width: 100%;
+  padding: 0 30px 30px;
+}
+.helpForm {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(36, 163, 255, 0);
+  margin-bottom: 15px;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  outline: none;
+}
+.helpForm.message {
+  min-height: 130px;
+  resize: none;
+  overflow: auto;
+}
+
+.helpForm:hover {
+  border: 1px solid var(--text-color-blue);
+}
+.helpForm:focus {
+  border: 1px solid var(--text-color-blue);
+}
+.helpForm:invalid {
+  border: 1px solid #ff0000;
+}
+
+::placeholder {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #b3b3ba;
+}
+.contactText {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b3b3ba;
+  margin: 15px 0;
+}
+.btnBlue {
+  width: 100%;
+  color: #ffffff;
+  background-color: var(--text-color-blue);
+  border: none;
+  border-radius: 12px;
+  padding: 18px 66px;
+  font-weight: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btnBlue:hover {
+  background-color: #0085ff;
+}
+.btnBlue:active {
+  background-color: #006ccf;
+}

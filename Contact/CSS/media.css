@@ -1,0 +1,55 @@
+@media (min-width: 768px) {
+  .containerWide {
+    max-width: calc(648px + 2rem);
+  }
+  .container {
+    max-width: calc(648px + 2rem);
+  }
+  .contact {
+    margin-bottom: 60px;
+  }
+  .contactAdress {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .containerWide {
+    max-width: calc(904px + 2rem);
+  }
+  .container {
+    max-width: calc(904px + 2rem);
+  }
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .contactTextPart,
+  .contactForm-background {
+    width: 100%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .containerWide {
+    max-width: calc(1320px + 2rem);
+  }
+  .container {
+    max-width: calc(1320px + 2rem);
+  }
+  .contact {
+    justify-content: center;
+    margin-right: 180px;
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .containerWide {
+    max-width: calc(1600px + 2rem);
+  }
+  .container {
+    max-width: calc(1600px + 2rem);
+  }
+}

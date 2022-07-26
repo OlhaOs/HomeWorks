@@ -1,0 +1,146 @@
+@import url("../../../CSS/global.css");
+@import url("../../../CSS/header-gradient.css");
+@import url("../../../CSS/footer.css");
+
+h2.redGradient {
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.wrapper {
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.link {
+  justify-content: flex-start;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-color-blue);
+  margin-bottom: 5px;
+  gap: 5px;
+}
+a.link:hover > svg.active > path {
+  stroke: #f0145a;
+}
+a.link:hover {
+  color: #f0145a;
+}
+.card {
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+.bgImage {
+  width: 92px;
+  height: 92px;
+  background-color: #ffffff;
+  border-radius: 24px;
+}
+.card h2 {
+  font-size: 30px;
+  line-height: 37px;
+  color: var(--fill-color);
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+.textCard {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+}
+.btnBlue {
+  display: block;
+  width: 100%;
+  max-width: 211px;
+  color: #ffffff;
+  background-color: var(--text-color-blue);
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 18px 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btnBlue:hover {
+  background-color: #0085ff;
+}
+.btnBlue:active {
+  background-color: #006ccf;
+}
+h3.service {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  line-height: 27px;
+}
+.serviceList {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+li + li {
+  margin-top: 15px;
+}
+.serviceList > li {
+  list-style: disc;
+}
+.serviceList > li::marker {
+  color: #f0145a;
+}
+.bgPublication {
+  background-color: #f5f5fa;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardPublication {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding-bottom: 30px;
+}
+.cardPublication > img {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.bgCard {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.textTitle {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24a3ff;
+}
+.textTitle:hover {
+  color: var(--fill-color);
+}
+.textDate {
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b3b3ba;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #e6e6f0;
+}
+.textPublication {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 15px;
+}

@@ -1,0 +1,47 @@
+@import url("../../CSS/global.css");
+@import url("../../CSS/header-white.css");
+@import url("../../CSS/footer.css");
+
+h1.redGradient {
+  font-size: 30px;
+  line-height: 37px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.card img {
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+}
+
+.position {
+  color: #b3b3ba;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.pointer {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f5f5fa;
+}
+.pointer:hover > svg > path {
+  stroke: var(--fill-color);
+}
+.card :hover h5.name {
+  color: var(--fill-color);
+}
