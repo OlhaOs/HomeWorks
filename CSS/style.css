@@ -272,12 +272,14 @@ p.textCard.homepage-p {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.tabsHomepage:active {
+
+#v-pills-home-tab.active {
   background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
 .slick-dots li button:before {
   font-size: 16px;
   line-height: 16px;
@@ -311,9 +313,9 @@ p.textCard.homepage-p {
   border-radius: 50%;
   margin-bottom: 30px;
 }
-.scrollDown a:hover > svg > path {
-  stroke: var(--fill-color);
-}
 .scrollDown:hover {
   border-color: var(--fill-color);
+}
+.scrollDown:hover svg > path {
+  stroke: var(--fill-color);
 }

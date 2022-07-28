@@ -42,6 +42,9 @@ h1.redGradient {
 .pointer:hover > svg > path {
   stroke: var(--fill-color);
 }
-.card :hover h5.name {
+.card:hover h5.name {
   color: var(--fill-color);
+}
+.card:hover svg > path {
+  stroke: var(--fill-color);
 }

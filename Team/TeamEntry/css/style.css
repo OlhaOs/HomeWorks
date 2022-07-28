@@ -1,0 +1,60 @@
+@import url("../../../CSS/global.css");
+@import url("../../../CSS/header-white.css");
+@import url("../../../CSS/footer.css");
+
+h1.redGradient {
+  font-size: 38px;
+  line-height: 46px;
+  margin-bottom: 15px;
+}
+.memberCard {
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.memberCard img {
+  border-radius: 12px;
+  height: 375px;
+  object-fit: cover;
+}
+.member {
+  padding-bottom: 30px;
+  border-bottom: 4px solid #e6e6f0;
+  margin-bottom: 30px;
+}
+.position {
+  color: #b3b3ba;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.memberLinkedin,
+.memberEmail {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24a3ff;
+  margin-top: 10px;
+}
+
+.memberAbout {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+h3 {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.wrapper {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.dotmember {
+  display: none;
+}
