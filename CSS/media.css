@@ -26,6 +26,9 @@
   .cardService {
     flex: 0 1 45%;
   }
+  .bgCardTeam {
+    min-height: unset;
+  }
   .bgCardTeam > img {
     border-radius: 12px 12px 0 0;
     height: 500px;

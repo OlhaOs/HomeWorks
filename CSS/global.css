@@ -113,6 +113,7 @@ li {
 .gap30 {
   gap: 30px;
 }
+
 .redGradient {
   background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
   -webkit-background-clip: text;

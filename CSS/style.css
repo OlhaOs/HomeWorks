@@ -108,8 +108,9 @@ p.textCard.homepage-p {
   background-color: #f5f5fa;
   padding-bottom: 30px;
   border-radius: 12px;
+  min-height: 1087px;
 }
-.bgForCard > img {
+.bgCardTeam > img {
   height: 500px;
   object-fit: cover;
   border-radius: 12px 12px 0 0;
@@ -287,6 +288,7 @@ p.textCard.homepage-p {
   opacity: 0.75;
   color: var(--text-color-blue);
 }
+
 .slick-dots {
   bottom: -55px;
 }
